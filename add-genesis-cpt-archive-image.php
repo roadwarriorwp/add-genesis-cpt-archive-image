@@ -2,7 +2,7 @@
 /*
 Plugin Name: Add Featured Image to Genesis CPT Archive
 Description: Adds an image uploader to the custom post type archive settings page in Genesis, which can be used in theme development.
-Version:     1.0
+Version:     2.0
 Author:      Road Warrior Creative
 Author URI:  http://roadwarriorcreative.com/
 License:     GPL2
