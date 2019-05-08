@@ -53,7 +53,7 @@ function rwc_register_sanitization_filters() {
 		'no_html', 
 		GENESIS_SETTINGS_FIELD,
 		array(
-			'cpt_featured_img',
+			'rwc_cpt_featured_img',
 		) 
 	);
 }
@@ -66,15 +66,15 @@ function rwc_add_genesis_cpt_img_metabox( $_genesis_cpt_settings_pagehook ) {
 
 function rwc_archive_img_box() {
   $settings_field = GENESIS_CPT_ARCHIVE_SETTINGS_FIELD_PREFIX . $_GET['post_type'];
-  $cpt_feat_img = genesis_get_option( 'cpt_featured_img', $settings_field );
+  $cpt_feat_img = genesis_get_option( 'rwc_cpt_featured_img', $settings_field );
 ?>
 <table class="form-table">
 <tbody>
     <tr valign="top">
-        <th scope="row"><label for="<?php echo $settings_field; ?>[cpt_featured_img]"><b><?php _e( 'Upload Featured Image', 'genesis' )?></b></label></th>
+        <th scope="row"><label for="<?php echo $settings_field; ?>[rwc_cpt_featured_img]"><b><?php _e( 'Upload Featured Image', 'genesis' )?></b></label></th>
         <td>
             <p>
-                <input type="text" name="<?php echo $settings_field; ?>[cpt_featured_img]" class="cpt-featured-img-url" id="<?php echo $settings_field; ?>[cpt_featured_img]" value="<?php if ( $cpt_feat_img ) echo $cpt_feat_img; ?>" />
+                <input type="text" name="<?php echo $settings_field; ?>[rwc_cpt_featured_img]" class="cpt-featured-img-url" id="<?php echo $settings_field; ?>[rwc_cpt_featured_img]" value="<?php if ( $cpt_feat_img ) echo $cpt_feat_img; ?>" />
                 <input type="button" id="cpt-featured-img-button" class="button" value="<?php _e( 'Choose or Upload an Image', 'prfx-textdomain' )?>" />
             </p>
 
