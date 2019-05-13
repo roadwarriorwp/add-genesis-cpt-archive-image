@@ -1,4 +1,4 @@
-=== Add Genesis CPT Archive Image ===
+=== Add Featured Image To Genesis CPT Archive ===
 Contributors: roadwarriorwp, alh0319, philwebs, stevejonesdev
 Donate link: https://roadwarriorcreative.com/donate/
 Tags: Genesis, custom post type, archive
